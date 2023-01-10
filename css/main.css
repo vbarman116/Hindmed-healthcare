@@ -1,0 +1,222 @@
+html {
+    font-size: 72.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    background-image: url("../images/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/* Header & Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+}
+
+nav {
+    margin: 4em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 3.5em;
+}
+
+nav ul li ul.categorised-menu li{
+    display:block;
+}
+
+nav ul li ul.categorised-menu{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+nav ul li:hover ul.categorised-menu{
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #10bed2;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+nav ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid #10bed2;
+    bottom: -6px;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(152, 152, 152);
+    bottom: -6px;
+    transition: width .3s;
+}
+
+
+/* Hero Section */
+
+main {
+    display: flex;
+    gap: 8em;
+    margin-top: 13em;
+    flex: 1 3;
+}
+
+.left-col {
+    width: 35%;
+    display: flex;
+    text-decoration: underline;
+}
+
+.right-col {
+    width: 55%;
+    display: flex;
+}
+
+.para {
+    font-size: 2.5rem;
+}
+
+
+
+h1 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-size: 5.2rem;
+    margin: 0;
+}
+
+
+.grid-1 {
+    margin-left: 6.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-1 .left-col {
+    color: #10bed2;
+
+}
+
+.grid-2 {
+    margin-left: 6.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2 {
+    background-color: #1f325c;
+}
+
+.grid-2 .left-col {
+    color: white;
+}
+
+.grid-2 .right-col {
+    color: white;
+}
+
+.grid-3 {
+    margin-left: 6.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-3 .left-col {
+    color: #10bed2;
+}
+
+.grid-4 {
+    margin-left: 6.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-4 .left-col {
+    color: #10bed2;
+}
+
+/* Microinteractions --Hover on Nav */
+
+nav ul li a:hover:before {
+    width: 35%;
+}
+
+.primary-cta:hover {
+    background: #e3e0c7;
+}
+
+.secondary-cta:hover svg {
+    transform: translateX(10px);
+}
+
+.card:hover {
+    background-size: 160%;
+}
+
+.card:hover .card-details {
+    transform: translateY(-20px);
+}
+
+/* Intro Animation */
+
+.overlay {
+    position: absolute;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s ease-in forwards;
+}
+
+@keyframes reveal {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+
+main {
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.4);
+}
+
+@keyframes growIn {
+    to {
+        transform: scale(1);
+    }
+}
