@@ -5,33 +5,44 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hindmed Healthcare</title>
-        <link rel="stylesheet" href="css/main.css">
-        
+        <link rel="stylesheet" href="css/style.css">   
     </head>
-    <body>
-    
-        <div class="overlay"></div>
-        <div class="wrapper">
-            <header>
-                <a href="#"><img src="/images/Hindmed.PNG" alt="Logo"></a>
-                <nav>
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Categories</a>
-                            <ul class="categorised-menu">
-                                <li><a href="pages/categorised/radiology.html">RADIOLOGY</a></li>
-                                <li><a href="#">SEO</a></li>
-                                <li><a href="#">Social Media</a></li>
-                              </ul>
-                        </li>
-                        <li><a href="pages/contact_us.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
 
+    <body>
+            <header>
+                    <div class="logo">
+                            <a href="#"><h1>HINDMED HEALTHCARE</h1></a>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="#">Categories</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#radiology">RADIOLOGY</a></li>
+                                        <li><a href="#mammo">MAMMOGRAPH</a></li>
+                                        <li><a href="#critical care">Critical Care</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="pages/contact_us.html">Contact</a></li>
+                                <li><a href="#about-us">About Us</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+            </header>
+            
+            <div class="categories">
+                    <nav>
+                        <ul>
+                            <li id="radiology">RADIOLOGY</li>
+                            <li id="mammo">MAMMOGRAPH</li>
+                            <li id="critical care">Critical Care</li>
+                        </ul>
+                    </nav>
+            </div>
         <main>
-            <div class="first-cell">
+            <div class="content-cell" id="about-us">
                 <section class="section-1">
                     <div class="grid-1">
                         <div class="left-col">
@@ -93,7 +104,7 @@
                                     <li>Organizational Integrity and Accountability.</li>
                                     <li>Adhere to Ethical Business Practice.</li>
                                     <li>Provide Learning Environment for Employees to grow and ﬂourish.</li>
-                                  </ol>
+                                </ol>
                         </div>
                     </div>
                 </section>
